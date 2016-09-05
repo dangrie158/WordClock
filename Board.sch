@@ -152,150 +152,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="maxim">
-<description>&lt;b&gt;Maxim Components&lt;/b&gt;&lt;p&gt;
-
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="TSSOP24">
-<description>&lt;b&gt;Thin Shrink Small Outline Plastic 24&lt;/b&gt;&lt;p&gt;
-MAX3223-MAX3243.pdf</description>
-<wire x1="-3.8146" y1="-2.2828" x2="3.8146" y2="-2.2828" width="0.1524" layer="21"/>
-<wire x1="3.8146" y1="2.2828" x2="3.8146" y2="-2.2828" width="0.1524" layer="21"/>
-<wire x1="3.8146" y1="2.2828" x2="-3.8146" y2="2.2828" width="0.1524" layer="21"/>
-<wire x1="-3.8146" y1="-2.2828" x2="-3.8146" y2="2.2828" width="0.1524" layer="21"/>
-<wire x1="-3.586" y1="-2.0542" x2="3.586" y2="-2.0542" width="0.0508" layer="21"/>
-<wire x1="3.586" y1="2.0542" x2="3.586" y2="-2.0542" width="0.0508" layer="21"/>
-<wire x1="3.586" y1="2.0542" x2="-3.586" y2="2.0542" width="0.0508" layer="21"/>
-<wire x1="-3.586" y1="-2.0542" x2="-3.586" y2="2.0542" width="0.0508" layer="21"/>
-<circle x="-2.9256" y="-1.2192" radius="0.4572" width="0.1524" layer="21"/>
-<smd name="1" x="-3.575" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="2" x="-2.925" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="3" x="-2.275" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="4" x="-1.625" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="5" x="-0.975" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="6" x="-0.325" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="7" x="0.325" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="8" x="0.975" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="9" x="1.625" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="10" x="2.275" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="11" x="2.925" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="12" x="3.575" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="13" x="3.575" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="14" x="2.925" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="15" x="2.275" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="16" x="1.625" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="17" x="0.975" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="18" x="0.325" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="19" x="-0.325" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="20" x="-0.975" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="21" x="-1.625" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="22" x="-2.275" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="23" x="-2.925" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="24" x="-3.575" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<text x="-4.1956" y="-2.0828" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="5.1862" y="-2.0828" size="1.016" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-3.6766" y1="-3.121" x2="-3.4734" y2="-2.2828" layer="51"/>
-<rectangle x1="-3.0266" y1="-3.121" x2="-2.8234" y2="-2.2828" layer="51"/>
-<rectangle x1="-2.3766" y1="-3.121" x2="-2.1734" y2="-2.2828" layer="51"/>
-<rectangle x1="-1.7266" y1="-3.121" x2="-1.5234" y2="-2.2828" layer="51"/>
-<rectangle x1="-1.0766" y1="-3.121" x2="-0.8734" y2="-2.2828" layer="51"/>
-<rectangle x1="-0.4266" y1="-3.121" x2="-0.2234" y2="-2.2828" layer="51"/>
-<rectangle x1="0.2234" y1="-3.121" x2="0.4266" y2="-2.2828" layer="51"/>
-<rectangle x1="0.8734" y1="-3.121" x2="1.0766" y2="-2.2828" layer="51"/>
-<rectangle x1="1.5234" y1="-3.121" x2="1.7266" y2="-2.2828" layer="51"/>
-<rectangle x1="2.1734" y1="-3.121" x2="2.3766" y2="-2.2828" layer="51"/>
-<rectangle x1="2.8234" y1="-3.121" x2="3.0266" y2="-2.2828" layer="51"/>
-<rectangle x1="3.4734" y1="-3.121" x2="3.6766" y2="-2.2828" layer="51"/>
-<rectangle x1="3.4734" y1="2.2828" x2="3.6766" y2="3.121" layer="51"/>
-<rectangle x1="2.8234" y1="2.2828" x2="3.0266" y2="3.121" layer="51"/>
-<rectangle x1="2.1734" y1="2.2828" x2="2.3766" y2="3.121" layer="51"/>
-<rectangle x1="1.5234" y1="2.2828" x2="1.7266" y2="3.121" layer="51"/>
-<rectangle x1="0.8734" y1="2.2828" x2="1.0766" y2="3.121" layer="51"/>
-<rectangle x1="0.2234" y1="2.2828" x2="0.4266" y2="3.121" layer="51"/>
-<rectangle x1="-0.4266" y1="2.2828" x2="-0.2234" y2="3.121" layer="51"/>
-<rectangle x1="-1.0766" y1="2.2828" x2="-0.8734" y2="3.121" layer="51"/>
-<rectangle x1="-1.7266" y1="2.2828" x2="-1.5234" y2="3.121" layer="51"/>
-<rectangle x1="-2.3766" y1="2.2828" x2="-2.1734" y2="3.121" layer="51"/>
-<rectangle x1="-3.0266" y1="2.2828" x2="-2.8234" y2="3.121" layer="51"/>
-<rectangle x1="-3.6766" y1="2.2828" x2="-3.4734" y2="3.121" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="MAX7219">
-<wire x1="-10.16" y1="20.32" x2="-10.16" y2="-22.86" width="0.4064" layer="94"/>
-<wire x1="-10.16" y1="-22.86" x2="7.62" y2="-22.86" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-22.86" x2="7.62" y2="20.32" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="20.32" x2="-10.16" y2="20.32" width="0.4064" layer="94"/>
-<text x="-10.16" y="20.955" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="DIG2" x="12.7" y="12.7" length="middle" direction="out" rot="R180"/>
-<pin name="DIG3" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
-<pin name="DIG4" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
-<pin name="DIG5" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
-<pin name="DIG6" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
-<pin name="DIG7" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
-<pin name="SEGA" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
-<pin name="SEGB" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
-<pin name="SEGC" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
-<pin name="SEGD" x="12.7" y="-10.16" length="middle" direction="out" rot="R180"/>
-<pin name="SEGE" x="12.7" y="-12.7" length="middle" direction="out" rot="R180"/>
-<pin name="SEGF" x="12.7" y="-15.24" length="middle" direction="out" rot="R180"/>
-<pin name="SEGG" x="12.7" y="-17.78" length="middle" direction="out" rot="R180"/>
-<pin name="SEGDP" x="12.7" y="-20.32" length="middle" direction="out" rot="R180"/>
-<pin name="DIG1" x="12.7" y="15.24" length="middle" direction="out" rot="R180"/>
-<pin name="DIG0" x="12.7" y="17.78" length="middle" direction="out" rot="R180"/>
-<pin name="DIN" x="-15.24" y="7.62" length="middle" direction="in"/>
-<pin name="DOUT" x="-15.24" y="5.08" length="middle" direction="out"/>
-<pin name="LOAD" x="-15.24" y="12.7" length="middle" direction="in"/>
-<pin name="CLK" x="-15.24" y="17.78" length="middle" direction="in" function="clk"/>
-<pin name="ISET" x="-15.24" y="0" length="middle" direction="in"/>
-<pin name="GND@2" x="-15.24" y="-20.32" length="middle" direction="pwr"/>
-<pin name="GND@1" x="-15.24" y="-17.78" length="middle" direction="pwr"/>
-<pin name="VCC" x="-15.24" y="-15.24" length="middle" direction="pwr"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MAX7219CWG">
-<gates>
-<gate name="G$1" symbol="MAX7219" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TSSOP24">
-<connects>
-<connect gate="G$1" pin="CLK" pad="13"/>
-<connect gate="G$1" pin="DIG0" pad="2"/>
-<connect gate="G$1" pin="DIG1" pad="11"/>
-<connect gate="G$1" pin="DIG2" pad="6"/>
-<connect gate="G$1" pin="DIG3" pad="7"/>
-<connect gate="G$1" pin="DIG4" pad="3"/>
-<connect gate="G$1" pin="DIG5" pad="10"/>
-<connect gate="G$1" pin="DIG6" pad="5"/>
-<connect gate="G$1" pin="DIG7" pad="8"/>
-<connect gate="G$1" pin="DIN" pad="1"/>
-<connect gate="G$1" pin="DOUT" pad="24"/>
-<connect gate="G$1" pin="GND@1" pad="4"/>
-<connect gate="G$1" pin="GND@2" pad="9"/>
-<connect gate="G$1" pin="ISET" pad="18"/>
-<connect gate="G$1" pin="LOAD" pad="12"/>
-<connect gate="G$1" pin="SEGA" pad="14"/>
-<connect gate="G$1" pin="SEGB" pad="16"/>
-<connect gate="G$1" pin="SEGC" pad="20"/>
-<connect gate="G$1" pin="SEGD" pad="23"/>
-<connect gate="G$1" pin="SEGDP" pad="22"/>
-<connect gate="G$1" pin="SEGE" pad="21"/>
-<connect gate="G$1" pin="SEGF" pad="15"/>
-<connect gate="G$1" pin="SEGG" pad="17"/>
-<connect gate="G$1" pin="VCC" pad="19"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="led">
 <description>&lt;b&gt;LEDs&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;br&gt;
@@ -10716,6 +10572,173 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="max7219">
+<packages>
+<package name="SO24L">
+<description>&lt;b&gt;Small Outline Package&lt;/b&gt;</description>
+<wire x1="7.366" y1="3.7338" x2="-7.366" y2="3.7338" width="0.1524" layer="21"/>
+<wire x1="7.366" y1="-3.7338" x2="7.747" y2="-3.3528" width="0.1524" layer="21" curve="90"/>
+<wire x1="-7.747" y1="3.3528" x2="-7.366" y2="3.7338" width="0.1524" layer="21" curve="-90"/>
+<wire x1="7.366" y1="3.7338" x2="7.747" y2="3.3528" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-7.747" y1="-3.3528" x2="-7.366" y2="-3.7338" width="0.1524" layer="21" curve="90"/>
+<wire x1="-7.366" y1="-3.7338" x2="7.366" y2="-3.7338" width="0.1524" layer="21"/>
+<wire x1="7.747" y1="-3.3528" x2="7.747" y2="3.3528" width="0.1524" layer="21"/>
+<wire x1="-7.747" y1="3.3528" x2="-7.747" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-7.747" y1="1.27" x2="-7.747" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-7.747" y1="-1.27" x2="-7.747" y2="-3.3528" width="0.1524" layer="21"/>
+<wire x1="-7.747" y1="-3.3782" x2="7.747" y2="-3.3782" width="0.0508" layer="21"/>
+<wire x1="-7.747" y1="1.27" x2="-7.747" y2="-1.27" width="0.1524" layer="21" curve="-180"/>
+<smd name="1" x="-6.985" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-5.715" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="-4.445" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="-3.175" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="-1.905" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="-0.635" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="0.635" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="1.905" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="17" x="1.905" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="18" x="0.635" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="19" x="-0.635" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="20" x="-1.905" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="21" x="-3.175" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="22" x="-4.445" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="23" x="-5.715" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="24" x="-6.985" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="16" x="3.175" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="15" x="4.445" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="14" x="5.715" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="13" x="6.985" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="9" x="3.175" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="10" x="4.445" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="11" x="5.715" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="12" x="6.985" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<text x="-5.842" y="-0.762" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-8.128" y="-3.556" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="-7.239" y1="-3.8608" x2="-6.731" y2="-3.7338" layer="21"/>
+<rectangle x1="-7.239" y1="-5.334" x2="-6.731" y2="-3.8608" layer="51"/>
+<rectangle x1="-5.969" y1="-3.8608" x2="-5.461" y2="-3.7338" layer="21"/>
+<rectangle x1="-5.969" y1="-5.334" x2="-5.461" y2="-3.8608" layer="51"/>
+<rectangle x1="-4.699" y1="-3.8608" x2="-4.191" y2="-3.7338" layer="21"/>
+<rectangle x1="-4.699" y1="-5.334" x2="-4.191" y2="-3.8608" layer="51"/>
+<rectangle x1="-3.429" y1="-3.8608" x2="-2.921" y2="-3.7338" layer="21"/>
+<rectangle x1="-3.429" y1="-5.334" x2="-2.921" y2="-3.8608" layer="51"/>
+<rectangle x1="-2.159" y1="-5.334" x2="-1.651" y2="-3.8608" layer="51"/>
+<rectangle x1="-2.159" y1="-3.8608" x2="-1.651" y2="-3.7338" layer="21"/>
+<rectangle x1="-0.889" y1="-3.8608" x2="-0.381" y2="-3.7338" layer="21"/>
+<rectangle x1="-0.889" y1="-5.334" x2="-0.381" y2="-3.8608" layer="51"/>
+<rectangle x1="0.381" y1="-3.8608" x2="0.889" y2="-3.7338" layer="21"/>
+<rectangle x1="0.381" y1="-5.334" x2="0.889" y2="-3.8608" layer="51"/>
+<rectangle x1="1.651" y1="-3.8608" x2="2.159" y2="-3.7338" layer="21"/>
+<rectangle x1="1.651" y1="-5.334" x2="2.159" y2="-3.8608" layer="51"/>
+<rectangle x1="-7.239" y1="3.8608" x2="-6.731" y2="5.334" layer="51"/>
+<rectangle x1="-7.239" y1="3.7338" x2="-6.731" y2="3.8608" layer="21"/>
+<rectangle x1="-5.969" y1="3.7338" x2="-5.461" y2="3.8608" layer="21"/>
+<rectangle x1="-5.969" y1="3.8608" x2="-5.461" y2="5.334" layer="51"/>
+<rectangle x1="-4.699" y1="3.7338" x2="-4.191" y2="3.8608" layer="21"/>
+<rectangle x1="-4.699" y1="3.8608" x2="-4.191" y2="5.334" layer="51"/>
+<rectangle x1="-3.429" y1="3.7338" x2="-2.921" y2="3.8608" layer="21"/>
+<rectangle x1="-3.429" y1="3.8608" x2="-2.921" y2="5.334" layer="51"/>
+<rectangle x1="-2.159" y1="3.7338" x2="-1.651" y2="3.8608" layer="21"/>
+<rectangle x1="-2.159" y1="3.8608" x2="-1.651" y2="5.334" layer="51"/>
+<rectangle x1="-0.889" y1="3.7338" x2="-0.381" y2="3.8608" layer="21"/>
+<rectangle x1="-0.889" y1="3.8608" x2="-0.381" y2="5.334" layer="51"/>
+<rectangle x1="0.381" y1="3.7338" x2="0.889" y2="3.8608" layer="21"/>
+<rectangle x1="0.381" y1="3.8608" x2="0.889" y2="5.334" layer="51"/>
+<rectangle x1="1.651" y1="3.7338" x2="2.159" y2="3.8608" layer="21"/>
+<rectangle x1="1.651" y1="3.8608" x2="2.159" y2="5.334" layer="51"/>
+<rectangle x1="2.921" y1="3.7338" x2="3.429" y2="3.8608" layer="21"/>
+<rectangle x1="4.191" y1="3.7338" x2="4.699" y2="3.8608" layer="21"/>
+<rectangle x1="5.461" y1="3.7338" x2="5.969" y2="3.8608" layer="21"/>
+<rectangle x1="6.731" y1="3.7338" x2="7.239" y2="3.8608" layer="21"/>
+<rectangle x1="2.921" y1="3.8608" x2="3.429" y2="5.334" layer="51"/>
+<rectangle x1="4.191" y1="3.8608" x2="4.699" y2="5.334" layer="51"/>
+<rectangle x1="5.461" y1="3.8608" x2="5.969" y2="5.334" layer="51"/>
+<rectangle x1="6.731" y1="3.8608" x2="7.239" y2="5.334" layer="51"/>
+<rectangle x1="2.921" y1="-3.8608" x2="3.429" y2="-3.7338" layer="21"/>
+<rectangle x1="4.191" y1="-3.8608" x2="4.699" y2="-3.7338" layer="21"/>
+<rectangle x1="5.461" y1="-3.8608" x2="5.969" y2="-3.7338" layer="21"/>
+<rectangle x1="6.731" y1="-3.8608" x2="7.239" y2="-3.7338" layer="21"/>
+<rectangle x1="2.921" y1="-5.334" x2="3.429" y2="-3.8608" layer="51"/>
+<rectangle x1="4.191" y1="-5.334" x2="4.699" y2="-3.8608" layer="51"/>
+<rectangle x1="5.461" y1="-5.334" x2="5.969" y2="-3.8608" layer="51"/>
+<rectangle x1="6.731" y1="-5.334" x2="7.239" y2="-3.8608" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX7219">
+<wire x1="-10.16" y1="20.32" x2="-10.16" y2="-22.86" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-22.86" x2="7.62" y2="-22.86" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-22.86" x2="7.62" y2="20.32" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="20.32" x2="-10.16" y2="20.32" width="0.4064" layer="94"/>
+<text x="-10.16" y="20.955" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="DIG2" x="12.7" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="DIG3" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="DIG4" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="DIG5" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="DIG6" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="DIG7" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="SEGA" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="SEGB" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="SEGC" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="SEGD" x="12.7" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="SEGE" x="12.7" y="-12.7" length="middle" direction="out" rot="R180"/>
+<pin name="SEGF" x="12.7" y="-15.24" length="middle" direction="out" rot="R180"/>
+<pin name="SEGG" x="12.7" y="-17.78" length="middle" direction="out" rot="R180"/>
+<pin name="SEGDP" x="12.7" y="-20.32" length="middle" direction="out" rot="R180"/>
+<pin name="DIG1" x="12.7" y="15.24" length="middle" direction="out" rot="R180"/>
+<pin name="DIG0" x="12.7" y="17.78" length="middle" direction="out" rot="R180"/>
+<pin name="DIN" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="DOUT" x="-15.24" y="5.08" length="middle" direction="out"/>
+<pin name="LOAD" x="-15.24" y="12.7" length="middle" direction="in"/>
+<pin name="CLK" x="-15.24" y="17.78" length="middle" direction="in" function="clk"/>
+<pin name="ISET" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="GND@2" x="-15.24" y="-20.32" length="middle" direction="pwr"/>
+<pin name="GND@1" x="-15.24" y="-17.78" length="middle" direction="pwr"/>
+<pin name="VCC" x="-15.24" y="-15.24" length="middle" direction="pwr"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX7219CWG">
+<gates>
+<gate name="G$1" symbol="MAX7219" x="10.16" y="-20.32"/>
+</gates>
+<devices>
+<device name="" package="SO24L">
+<connects>
+<connect gate="G$1" pin="CLK" pad="13"/>
+<connect gate="G$1" pin="DIG0" pad="2"/>
+<connect gate="G$1" pin="DIG1" pad="11"/>
+<connect gate="G$1" pin="DIG2" pad="6"/>
+<connect gate="G$1" pin="DIG3" pad="7"/>
+<connect gate="G$1" pin="DIG4" pad="3"/>
+<connect gate="G$1" pin="DIG5" pad="10"/>
+<connect gate="G$1" pin="DIG6" pad="5"/>
+<connect gate="G$1" pin="DIG7" pad="8"/>
+<connect gate="G$1" pin="DIN" pad="1"/>
+<connect gate="G$1" pin="DOUT" pad="24"/>
+<connect gate="G$1" pin="GND@1" pad="4"/>
+<connect gate="G$1" pin="GND@2" pad="9"/>
+<connect gate="G$1" pin="ISET" pad="18"/>
+<connect gate="G$1" pin="LOAD" pad="12"/>
+<connect gate="G$1" pin="SEGA" pad="14"/>
+<connect gate="G$1" pin="SEGB" pad="16"/>
+<connect gate="G$1" pin="SEGC" pad="20"/>
+<connect gate="G$1" pin="SEGD" pad="23"/>
+<connect gate="G$1" pin="SEGDP" pad="22"/>
+<connect gate="G$1" pin="SEGE" pad="21"/>
+<connect gate="G$1" pin="SEGF" pad="15"/>
+<connect gate="G$1" pin="SEGG" pad="17"/>
+<connect gate="G$1" pin="VCC" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10726,7 +10749,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </class>
 </classes>
 <parts>
-<part name="U2" library="maxim" deviceset="MAX7219CWG" device=""/>
+<part name="U2" library="max7219" deviceset="MAX7219CWG" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805"/>
@@ -10791,7 +10814,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="LED62" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="LED63" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="LED64" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="U3" library="maxim" deviceset="MAX7219CWG" device=""/>
+<part name="U3" library="max7219" deviceset="MAX7219CWG" device=""/>
 <part name="LED65" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="LED66" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="LED67" library="led" deviceset="LED" device="CHIPLED_0805"/>
