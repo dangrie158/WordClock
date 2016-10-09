@@ -9,6 +9,14 @@
 # comment the following line if you want to have your project file included.
 eagle.epf
 
+#PIO overhead
+.clang_complete
+.travis.yml
+.piolibdeps
+.pioenvs
+.gitignore
+.gcc-flags.json
+
 #AutoCAD Files
 *.dxf
 *.bak
