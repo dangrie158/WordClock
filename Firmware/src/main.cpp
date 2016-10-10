@@ -1,5 +1,3 @@
-
-
 #include <DS1307RTC.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266mDNS.h>
@@ -16,13 +14,14 @@
 #define WIFI_SSID "WordClock"
 #define WIFI_PASS "wordclock"
 
+#define DISPLAY_UPDATE_INTERVAL 1000
+
 ConfigServer server(80);
 Display display(13, 14, 12);
 NTP ntp;
 
 Ticker timeQueryTask;
-
-wl_status_t mWiFiStatus;
+unsigned long mNextDisplayUpdate;
 
 void queryTime() { ntp.queryTime(); }
 
@@ -57,6 +56,13 @@ void epochToLocalTime(unsigned long epoch, int *hours, int *minutes,
 
   // adjust the timezone
   *hours += server.getConfig()->timezone.toInt();
+}
+
+void print2digits(int number) {
+  if (number >= 0 && number < 10) {
+    Serial.write('0');
+  }
+  Serial.print(number);
 }
 
 void setup() {
@@ -94,11 +100,12 @@ void setup() {
     epochToLocalTime(epoch, &hours, &minutes, &seconds);
 
     Serial.print("Time: ");
-    Serial.print(hours);
+    print2digits(hours);
     Serial.print(":");
-    Serial.print(minutes);
+    print2digits(minutes);
     Serial.print(":");
-    Serial.print(seconds);
+    print2digits(seconds);
+    Serial.write('\n');
 
     Serial.println("Recalibrating Time");
     tmElements_t tm;
@@ -109,17 +116,8 @@ void setup() {
   });
 }
 
-void print2digits(int number) {
-  if (number >= 0 && number < 10) {
-    Serial.write('0');
-  }
-  Serial.print(number);
-}
-
 void loop() {
   Config *config = server.getConfig();
-
-  display.setLed(1, 2, true);
 
   server.handleClient();
   ntp.handlePackets();
@@ -128,23 +126,23 @@ void loop() {
   int brightness = config->brightness.toInt();
   display.setBrightness(brightness);
 
+  // Read the time
   tmElements_t tm;
+  if (millis() > mNextDisplayUpdate) {
+    mNextDisplayUpdate = millis() + DISPLAY_UPDATE_INTERVAL;
+    if (RTC.read(tm)) {
+      Serial.print("Displaying Time: ");
+      print2digits(tm.Hour);
+      Serial.write(':');
+      print2digits(tm.Minute);
+      Serial.write(':');
+      print2digits(tm.Second);
+      Serial.write('\n');
 
-  if (RTC.read(tm)) {
-    Serial.print("Ok, Time = ");
-    print2digits(tm.Hour);
-    Serial.write(':');
-    print2digits(tm.Minute);
-    Serial.write(':');
-    print2digits(tm.Second);
-    Serial.print(", Date (D/M/Y) = ");
-    Serial.print(tm.Day);
-    Serial.write('/');
-    Serial.print(tm.Month);
-    Serial.write('/');
-    Serial.print(tmYearToCalendar(tm.Year));
-    Serial.println();
-  } else {
-    // TODO: loading animation
+      display.clearDisplay();
+      display.showTime(tm.Hour, tm.Minute, tm.Second);
+    } else {
+      // TODO: loading animation
+    }
   }
 }

@@ -244,3 +244,129 @@ void Display::setBrightness(int newBrightness) {
   mLc->setIntensity(0, newBrightness);
   mLc->setIntensity(1, newBrightness);
 }
+
+void Display::showTime(int hours, int minutes, int seconds) {
+  if (((minutes >= 57 && seconds >= 30) || minutes > 57) ||
+      ((minutes < 3 && seconds < 30) || minutes < 2)) {
+    // es ist ganz uhr
+    this->showWord(ES);
+    this->showWord(IST);
+    if (minutes > 2) {
+      // in previous hour
+      this->doHourDisplay((hours + 1) % 24, false);
+    } else {
+      // current hour
+      this->doHourDisplay(hours, false);
+    }
+    this->showWord(UHR);
+  } else if ((minutes >= 52 && seconds >= 30) || minutes > 52) {
+    // es ist fünf vor
+    this->showWord(ES);
+    this->showWord(IST);
+    this->showWord(M_FUNF);
+    this->showWord(VOR);
+    this->doHourDisplay((hours + 1) % 24, true);
+  } else if ((minutes >= 47 && seconds >= 30) || minutes > 47) {
+    // es ist zehn vor
+    this->showWord(ES);
+    this->showWord(IST);
+    this->showWord(M_ZEHN);
+    this->showWord(VOR);
+    this->doHourDisplay((hours + 1) % 24, true);
+  } else if ((minutes >= 42 && seconds >= 30) || minutes > 42) {
+    // es ist viertel vor
+    this->showWord(ES);
+    this->showWord(IST);
+    this->showWord(M_VIERTEL);
+    this->showWord(VOR);
+    this->doHourDisplay((hours + 1) % 24, true);
+  } else if ((minutes >= 37 && seconds >= 30) || minutes > 37) {
+    // es ist zwanzig vor
+    this->showWord(ES);
+    this->showWord(IST);
+    this->showWord(M_ZWANZIG);
+    this->showWord(VOR);
+    this->doHourDisplay((hours + 1) % 24, true);
+  } else if ((minutes >= 32 && seconds >= 30) || minutes > 32) {
+    // es ist fünf nach halb
+    this->showWord(ES);
+    this->showWord(IST);
+    this->showWord(M_FUNF);
+    this->showWord(NACH);
+    this->showWord(HALB);
+    this->doHourDisplay((hours + 1) % 24, true);
+  } else if ((minutes >= 27 && seconds >= 30) || minutes > 27) {
+    // es ist halb
+    this->showWord(ES);
+    this->showWord(IST);
+    this->showWord(HALB);
+    this->doHourDisplay((hours + 1) % 24, true);
+  } else if ((minutes >= 22 && seconds >= 30) || minutes > 22) {
+    // es ist fünf vor halb
+    this->showWord(ES);
+    this->showWord(IST);
+    this->showWord(M_FUNF);
+    this->showWord(VOR);
+    this->showWord(HALB);
+    this->doHourDisplay((hours + 1) % 24, true);
+  } else if ((minutes >= 17 && seconds >= 30) || minutes > 17) {
+    // es ist zwanzig nach
+    this->showWord(ES);
+    this->showWord(IST);
+    this->showWord(M_ZWANZIG);
+    this->showWord(NACH);
+    this->doHourDisplay(hours, true);
+  } else if ((minutes >= 12 && seconds >= 30) || minutes > 12) {
+    // es ist viertel h+1
+    this->showWord(ES);
+    this->showWord(IST);
+    this->showWord(M_VIERTEL);
+    this->doHourDisplay((hours + 1) % 24, true);
+  } else if ((minutes == 7 && seconds >= 30) || minutes > 7) {
+    // es ist zehn nach
+    this->showWord(ES);
+    this->showWord(IST);
+    this->showWord(M_ZEHN);
+    this->showWord(NACH);
+    this->doHourDisplay(hours, true);
+  } else if ((minutes >= 2 && seconds >= 30) || minutes > 2) {
+    // es ist fünf nach
+    this->showWord(ES);
+    this->showWord(IST);
+    this->showWord(M_FUNF);
+    this->showWord(NACH);
+    this->doHourDisplay(hours, true);
+  }
+}
+
+void Display::doHourDisplay(int8_t hour, bool plural) {
+  if (hour == 0 || hour == 12) {
+    this->showWord(H_ZWOLF);
+  } else if (hour == 1 || hour == 13) {
+    if (plural) {
+      this->showWord(H_EINS);
+    } else {
+      this->showWord(H_EIN);
+    }
+  } else if (hour == 2 || hour == 14) {
+    this->showWord(H_ZWEI);
+  } else if (hour == 3 || hour == 15) {
+    this->showWord(H_DREI);
+  } else if (hour == 4 || hour == 16) {
+    this->showWord(H_VIER);
+  } else if (hour == 5 || hour == 17) {
+    this->showWord(H_FUNF);
+  } else if (hour == 6 || hour == 18) {
+    this->showWord(H_SECHS);
+  } else if (hour == 7 || hour == 19) {
+    this->showWord(H_SIEBEN);
+  } else if (hour == 8 || hour == 20) {
+    this->showWord(H_ACHT);
+  } else if (hour == 9 || hour == 21) {
+    this->showWord(H_NEUN);
+  } else if (hour == 10 || hour == 22) {
+    this->showWord(H_ZEHN);
+  } else if (hour == 11 || hour == 23) {
+    this->showWord(H_ELF);
+  }
+}

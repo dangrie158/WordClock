@@ -41,6 +41,8 @@ private:
   static uint8_t rowForPixel[10][11];
   static uint8_t colForPixel[10][11];
 
+  void doHourDisplay(int8_t hour, bool plural);
+
 public:
   explicit Display(uint8_t data, uint8_t clock, uint8_t cs)
       : mLc(new LedControl(data, clock, cs, DISPLAY_NUM_DEVICES)) {}
@@ -50,6 +52,7 @@ public:
   void showWord(ClockWord which);
   void clearDisplay();
   void setBrightness(int newBrightness);
+  void showTime(int hours, int minutes, int seconds);
 };
 
 #endif //_DISPLAY_H_
